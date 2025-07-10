@@ -3,7 +3,7 @@ Given an array of pgEncounter objects, convert them to mongo Encounter objects
 """
 import datetime as dt
 import logging
-
+IndexModel
 from azure.storage.blob import BlobServiceClient
 
 from pymongo import ASCENDING, IndexModel
