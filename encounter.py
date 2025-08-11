@@ -57,6 +57,7 @@ async def convert_encounters(pg_objects_arr, rx_patient_id):
             encounter_fhir_id=stripstr_or_none(pg_encounter.FHIR_ID),
             encounter_csn=stripstr_or_none(pg_encounter.ENCOUNTER_CSN),
             status=stripstr_or_none(pg_encounter.STATUS),
+            patient_id=patient_id
             rx_patient_id=rx_patient_id,
             practitioner_id=stripstr_or_none(pg_encounter.PRACTITIONER_ID),
             practitioner_display=stripstr_or_none(pg_encounter.PRACTITIONER_DISPLAY),
